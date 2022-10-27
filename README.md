@@ -4,3 +4,5 @@
 
 #### Link to Render Page [Render Page](https://f2wb80kuchi.onrender.com/)
 
+#### Class Name: Village
+#### Attributes: village_Name, village_state, village_country
