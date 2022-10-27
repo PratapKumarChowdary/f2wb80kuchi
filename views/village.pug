@@ -2,4 +2,28 @@ extends layout
 
 block content
   h1= title
- 
+  div(class="container-fluid")
+    div(class="row")
+        - 
+            let results = [
+                {
+                "village_Name" : "Maryville",
+                "village_State" : "Missouri",
+                "village_Population" : 2500
+                },
+                {
+                "village_Name" : "Guntur",
+                "village_State" : "Andhra Pradesh",
+                "village_Population" : 500000
+                },
+                {
+                "village_Name" : "Hyderabad",
+                "village_State" : "Telangana",
+                "village_Population" : 2000000
+                },
+
+            ]
+        each v,index in results
+            div(class="col-sm-2") #{v.village_Name}
+            div(class="col-sm-2") #{v.village_State}
+            div(class="col-sm-2") #{v.village_Population}
